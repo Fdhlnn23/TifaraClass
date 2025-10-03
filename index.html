@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tifara Never Die - Tempat berkarya, belajar, dan berprestasi bersama.">
+  <title>Tifara Never Die</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Preload kunci aset untuk performance -->
+  <link rel="preload" href="./assets/img/home.jpg" as="image">
+</head>
+<body>
+  <div class="music-player"><audio autoplay loop>
+  <source src="musik.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+        </audio>
+     </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <!--<i class="fas fa-star"></i>--> Tifara
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a>
+        <a href="#tentang" class="nav-link"><i class="fas fa-info-circle"></i> Tentang</a>
+        <a href="#struktur" class="nav-link"><i class="fas fa-sitemap"></i> Struktur</a>
+        <a href="#anggota" class="nav-link"><i class="fas fa-users"></i> Anggota</a>
+        <a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Gallery</a>
+        <a href="#prestasi" class="nav-link"><i class="fas fa-trophy"></i> Prestasi</a>
+        <span class="indicator"></span>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Section Home (Hero) -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">WELCOME TO TIFARA</h1>
+      <p class="hero-subtitle">Tempat berkarya, belajar, dan berprestasi bersama</p>
+      <a href="#tentang" class="cta-button">Mulai Petualangan</a>
+    </div>
+  </section>
+
+  <!-- Section Tentang -->
+  <section id="tentang" class="tentang">
+    <div class="container">
+      <div class="judul-section fade-in">
+        <h1>TENTANG TIFARA</h1>
+        <p>Selamat datang di TIFARA, tempat dimana impian menjadi kenyataan! Di sini, setiap hari adalah petualangan baru dalam belajar, berkembang, dan menciptakan kenangan tak terlupakan.</p>
+      </div>
+
+      <div class="tentang-stats">
+        <div class="stats-item">
+          <div class="number" data-target="32">32</div>
+          <div class="label">Students</div>
+          <i class="fas fa-graduation-cap"></i>
+        </div>
+        <div class="stats-item">
+          <div class="number" data-target="21">21</div>
+          <div class="label">Boys</div>
+          <i class="fas fa-male"></i>
+        </div>
+        <div class="stats-item">
+          <div class="number" data-target="11">11</div>
+          <div class="label">Girls</div>
+          <i class="fas fa-female"></i>
+        </div>
+      </div>
+
+      <div class="judul-section fade-in">
+        <h1>MEDIA SOSIAL</h1>
+        <p>Explorasi visual di Instagram, dan ledakan kreativitas di TikTok. Satu dunia, dua pengalaman unik.</p>
+      </div>
+
+      <div class="card-container">
+        <a href="https://www.instagram.com/tifara_untara" target="_blank" class="social-card" style="background-image: url('./assets/img/home.jpg');">
+          <div class="card-overlay">
+            <i class="fab fa-instagram"></i>
+            <p>Instagram</p>
+          </div>
+        </a>
+        <a href="https://www.tiktok.com/@dadidudedenn" target="_blank" class="social-card tiktok" style="background-image: url('./assets/img/home.jpg');">
+          <div class="card-overlay">
+            <i class="fab fa-tiktok"></i>
+            <p>TikTok</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Struktur -->
+  <section id="struktur" class="struktur-section full-width fade-in">
+    <div class="container">
+      <div class="judul-section">
+        <h1>STRUKTUR KELAS</h1>
+        <p>Dapatkan wawasan tentang struktur kelas kami yang solid dan terorganisir dengan baik disini. Kami menyajikan informasi tentang pembagian peran dan kerangka kerja yang mendukung lingkungan belajar yang efektif dan inklusif.</p>
+      </div>
+
+      <!-- Row 1: Wali Kelas -->
+      <div class="struktur-container row-single">
+        <div class="struktur wali-kelas-struktur">
+          <img src="./assets/img/wali-kelas.png" alt="Wali Kelas">
+          <div class="struktur-content">
+            <i class="fas fa-user-tie"></i>
+            <h3>Wali Kelas</h3>
+            <p>Saryani, S.Kom., M.TI</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: Ketua & Wakil -->
+      <div class="struktur-container row-pair">
+        <div class="struktur">
+          <div class="circle-img-container">
+            <img src="./assets/img/user-16.png" alt="Ketua Kelas" class="circle-img">
+          </div>
+          <div class="struktur-content">
+            <i class="fas fa-chair"></i>
+            <h3>Ketua Kelas</h3>
+            <p>Elis Amelia Contesa</p>
+          </div>
+        </div>
+        <div class="struktur">
+          <div class="circle-img-container">
+            <img src="./assets/img/user.jpg" alt="Wakil Ketua" class="circle-img">
+          </div>
+          <div class="struktur-content">
+            <i class="fas fa-user-check"></i>
+            <h3>Wakil Ketua</h3>
+            <p>Adan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3: Sekre 1 & 2 -->
+      <div class="struktur-container row-pair">
+        <div class="struktur">
+          <div class="circle-img-container">
+            <img src="./assets/img/user.jpg" alt="Sekre 1" class="circle-img">
+          </div>
+          <div class="struktur-content">
+            <i class="fas fa-file-alt"></i>
+            <h3>Sekretaris 1</h3>
+            <p>Adan</p>
+          </div>
+        </div>
+        <div class="struktur">
+          <div class="circle-img-container">
+            <img src="./assets/img/user.jpg" alt="Sekre 2" class="circle-img">
+          </div>
+          <div class="struktur-content">
+            <i class="fas fa-file-alt"></i>
+            <h3>Sekretaris 2</h3>
+            <p>Adan</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 4: Bendahara 1 & 2 -->
+      <div class="struktur-container row-pair">
+        <div class="struktur">
+          <div class="circle-img-container">
+            <img src="./assets/img/user.jpg" alt="Bendahara 1" class="circle-img">
+          </div>
+          <div class="struktur-content">
+            <i class="fas fa-wallet"></i>
+            <h3>Bendahara 1</h3>
+            <p>Adan</p>
+          </div>
+        </div>
+        <div class="struktur">
+          <div class="circle-img-container">
+            <img src="./assets/img/user.jpg" alt="Bendahara 2" class="circle-img">
+          </div>
+          <div class="struktur-content">
+            <i class="fas fa-wallet"></i>
+            <h3>Bendahara 2</h3>
+            <p>Adan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Anggota -->
+  <section id="anggota" class="section fade-in">
+    <div class="container">
+      <div class="judul-section">
+        <h1>DAFTAR ANGGOTA</h1>
+        <p>Temui tim hebat kami yang penuh semangat.</p>
+      </div>
+      <div class="members-grid">
+        <div class="member-card">
+          <img src="./assets/img/user-1.png" alt="Anggota 1">
+          <h3>Abdurrahman</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <!-- Tambah lebih banyak card sesuai kebutuhan -->
+        <div class="member-card">
+          <img src="./assets/img/user-2.png" alt="Anggota 2">
+          <h3>Aditya Hartono</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-3.png" alt="Anggota 3">
+          <h3>Ahmad Fadhlan Amin</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-4.png" alt="Anggota 4">
+          <h3>Alya Rosiana Rahayu</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-5.png" alt="Anggota 5">
+          <h3>Anaz Urbanangta</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-6.png" alt="Anggota 6">
+          <h3>Arvenal</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-7.png" alt="Anggota 7">
+          <h3>Attha Mauluna Isnainy Putrie</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-8.png" alt="Anggota 8">
+          <h3>Aulia Nur Ramadhani</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-9.png" alt="Anggota 9">
+          <h3>Chandra Elisa</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-10.png" alt="Anggota 10">
+          <h3>Dede Juliansyah</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-11.png" alt="Anggota 11">
+          <h3>Dhava Adiyuda Pratama</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-12.png" alt="Anggota 12">
+          <h3>Dimas Eka Saputra</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-13.png" alt="Anggota 13">
+          <h3>Dimas Maulaya Syahid</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-14.png" alt="Anggota 14">
+          <h3>Dini Fitriani</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-15.png" alt="Anggota 15">
+          <h3>Dio Adha</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-16.png" alt="Anggota 16">
+          <h3>Elis Amelia Contesa</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-17.png" alt="Anggota 17">
+          <h3>Fadly Irfansyah Mutaqin</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-18.png" alt="Anggota 18">
+          <h3>Fahmi Rizqy Fadhlillah</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user.jpg" alt="Anggota 19">
+          <h3>Fathahillah Zakky</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-19.png" alt="Anggota 20">
+          <h3>Firsyha</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-20.png" alt="Anggota 21">
+          <h3>Intan Aulia Mufliadevi</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-21.png" alt="Anggota 22">
+          <h3>Keisya Cintya Putri</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-22.png" alt="Anggota 23">
+          <h3>Lia Noviana</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-23.png" alt="Anggota 24">
+          <h3>Rian Permana</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-24.png" alt="Anggota 25">
+          <h3>Muhamad Bilal Islami</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-25.png" alt="Anggota 26">
+          <h3>Wahyu Putra Raihan</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-26.png" alt="Anggota 27">
+          <h3>Muhammad Nurul Furqon</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-27.png" alt="Anggota 28">
+          <h3>Naufal Syauqi</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-28.png" alt="Anggota 30">
+          <h3>Rangga Bachrunisman</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-30.png" alt="Anggota 31">
+          <h3>Saefullah</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-31.png" alt="Anggota 32">
+          <h3>Samuel</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+        <div class="member-card">
+          <img src="./assets/img/user-32.png" alt="Anggota 33">
+          <h3>Zahra Hikayatul Aulia</h3>
+          <p>Anggota Aktif</p>
+          <i class="fas fa-star"></i>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Gallery -->
+  <section id="gallery" class="section fade-in">
+    <div class="container">
+      <div class="judul-section">
+        <h1>GALLERY KEGIATAN</h1>
+        <p>Momen-momen seru dari perjalanan kami.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item" style="background-image: url('./assets/img/home.jpg');"></div>
+        <div class="gallery-item" style="background-image: url('./assets/img/home.jpg');"></div>
+        <div class="gallery-item" style="background-image: url('./assets/img/home.jpg');"></div>
+        <div class="gallery-item" style="background-image: url('./assets/img/home.jpg');"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Prestasi -->
+  <section id="prestasi" class="section fade-in">
+    <div class="container">
+      <div class="judul-section">
+        <h1>PRESTASI KAMI</h1>
+        <p>Pencapaian yang membanggakan dari tim Tifara.</p>
+      </div>
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <i class="fas fa-medal"></i>
+          <h3>Juara 1 Lomba</h3>
+          <p>2025 - Lomba Disakiti</p>
+        </div>
+        <div class="achievement-card">
+          <i class="fas fa-medal"></i>
+          <h3>Juara 1 Lomba</h3>
+          <p>2024 - Lomba Disakiti</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- Brand -->
+      <div class="footer-col">
+        <h2 class="footer-tifara">TIFARA</h2>
+        <p class="footer-text">
+          Dalam lembaran hidup kita, Kuliah adalah bab yang takkan pernah kita lupakan,
+          inilah momen-momen yang akan terus kita kenang! 📖 ✍️
+          <span class="highlight">#PetualanganTifara</span>
+        </p>
+      </div>
+
+      <!-- Media Social -->
+      <div class="footer-col">
+        <h2 class="footer-title">Media Social</h2>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/tifara_untara" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@dadidudedenn" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="footer-col">
+        <h2 class="footer-title">Link</h2>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#tentang">About</a></li>
+          <li><a href="#struktur">Structure</a></li>
+          <li><a href="#anggota">Member</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#prestasi">Achievement</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h2 class="footer-title">Contact</h2>
+        <p class="footer-text">Kab. Tangerang, Solear</p>
+        <p class="footer-text">Cikasungka, Perum Adiyasa</p>
+        <p class="footer-text">ahmadfadhlan2307@gmail.com</p>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p>© Copyright Tifara, 2025</p>
+      <p>Website By <span class="author">Adan</span></p>
+    </div>
+  </footer>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
